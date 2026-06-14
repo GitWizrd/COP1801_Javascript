@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeWannaBee Corporation</title>
+</head>
+<body>
+
+    <h1>Welcome to WeWannaBee Corporation's Website</h1>
+    <p>We are excited to be undergoing a renovation to better serve our customers.</p>
+
+    <script>
+        // Display a phrase on the console
+        console.log("My first JavaScript webpage is live and ready to go!");
+    </script>
+
+</body>
+</html>
