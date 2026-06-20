@@ -59,10 +59,6 @@ function displayDogProperties(dog) {
     return result;
 }
 
-// Display the properties for both dogs using the for...in loop
-output.innerHTML += "<b>Dog 1 Properties:</b><br>" + displayDogProperties(dog1) + "<br>";
-output.innerHTML += "<b>Dog 2 Properties:</b><br>" + displayDogProperties(dog2) + "<br>";
-
 // Call myGreeting for dog1 to display whether it can talk
 output.innerHTML += "<b>Dog 1 Greeting:</b><br>" + dog1.myGreeting() + "<br><br>";
 
@@ -77,8 +73,9 @@ for (var i = 0; i < dogList.length; i++) {
     }
 }
 
-// Display the selected dog's information, or an error message if not found
+// Display the selected dog's properties and greeting, or an error message if not found
 if (foundDog !== null) {
+    output.innerHTML += "<b>" + foundDog.name + " Properties:</b><br>" + displayDogProperties(foundDog) + "<br>";
     output.innerHTML += "<b>Selected Dog:</b><br>" + foundDog.myGreeting();
 } else {
     output.innerHTML += "<b>Error:</b> The dog you selected, \"" + selectedName + "\", does not exist in our list.";
